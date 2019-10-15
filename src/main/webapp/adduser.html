@@ -4,22 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Add user test app</title>
+    <link href="css/addUser.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-
-<form action="/adduserform/api/add" method="POST">
-    First name:
-    <br>
-    <input type="text" name="name">
-    <br><br>
-    Last name:
-    <br>
-    <input type="number" name="age">
-    <br><br>
-    <input type="submit" value="Submit">
-</form>
-
+    <form action="/adduserform/api/add" method="POST">
+        <div class="input_container">
+            <h2 class="label">Fill the form</h2>
+            <label class="label">First name:</label>
+            <br>
+            <input type="text" name="name">
+            <br><br>
+            <label class="label">Last name:</label>
+            <br>
+            <input type="text" name="surName">
+            <br><br>
+            <label class="label">Age:</label>
+            <br>
+            <input type="number" name="age">
+            <br><br>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
 </body>
 
 </html>
